@@ -9,10 +9,11 @@
     }
 */
 
+/* Je sélectionne deux éléments en même temps avec une virgule (,) */
 p {
-    color: blue;
+    color: rgb(111, 111, 247);
+    font-size: larger;
 }
-
 
 /* 
     Les valeurs possibles pour les couleurs:
@@ -24,5 +25,10 @@ p {
 */
 
 
+h1 {
+    font-family: cursive;
+}
 
-
+span {
+    color: green;
+}
