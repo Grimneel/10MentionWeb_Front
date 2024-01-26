@@ -1,0 +1,21 @@
+body {
+    background-color: blanchedalmond;
+}
+
+a {
+    text-decoration: none;/* texte_decoration: permet de changer la décoration de texte, avec la valeur none je désactive le soulignement */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 108, 108);
+}
+
+/* une pseudo classe est un mot préfixé par deux points, qui s'ajoute au selecteur pour appliquer un style à un élément dnas un cas particulier */
+
+a:hover { /* :hover designe un objet survolé par le curseur de la souris ça peut être un lien ou n'impporte quel élément html */
+    text-decoration: underline;
+    color: green;
+    background-color: aquamarine;
+}
+a:visited { /* La pseudo classe ":visited" désigne un lien dont la page à déjà été visité  */
+
+    color: blue;
+} 

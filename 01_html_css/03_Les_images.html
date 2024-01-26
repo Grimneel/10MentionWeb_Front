@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les balises des liens en HTML">
+    <meta name="author" content="Fabien Pottier">
+    <link rel="stylesheet" type="text/css" href="assets/css/03_Les_images.css">
+</head>
+<body>
+   <h1>Les images</h1>
+    <!-- 
+        La balise <img> est une balise HTML utilisée pour incorporer une image dans une page web.
+        C'est une balise de la famille  "orpholine" ou "autofermante" et de type inline
+        L'attribut "src" :  cet attribut est obligatoire et spécifie le chemin ou l'URL de l'image que vous souhaitez inclure sur la page. 
+        L'attribut "alt" : « texte alternatif » cet attribut est également important. Il fournit un texte alternatif décrivant le contenu de l'image. 
+        Cela est crucial pour l'accessibilité, car le texte alternatif est affiché à la place de l'image si celle-ci ne peut pas être chargée ou pour les utilisateurs qui utilisent des lecteurs d'écran (personnes non-voyantes) 
+    -->
+
+    <h2>1/ Image insérée en HTML</h2>
+    <img src="https://i.notretemps.com/1400x787/smart/2021/05/03/trois-facons-de-distraire-votre-chat-a-la-maison.jpeg" alt="Un chaton touuuuuut mignon">
+    <!-- ici dans src j'ai mis un chemin absolu de l'image -->
+
+    <img src="assets/img/creature-reptilienne-aux-cornes-saillantes-ressemblant-dinosaure_1308-133110.jpg" alt="Créature reptilienne ressemblant à un dinosaure" >
+    <!-- Ici dans src j'ai mis le chemin relatif de l'image -->
+
+
+    <img src="assets/img/unnamed.jpg" alt="Image d'une belle lionne avec son reflet dans l'eau" title="Image d'une belle lionne avec son reflet dans l'eau">
+
+    <h2>Les figures</h2>
+    <!--  
+        Les figures sont des éléments qui viennent enrichir le texte pour compléter les informations sur l'image.
+        Ces balises sont utilisées pour encapsuler des éléments multimédias tels que des images, des graphiques, des vidéos, etc., dans le contenu du texte pour apporter une signification ou des explications supplémentaires.
+        
+        Une figure est plus souvent accompagnée d'une légende. Pour ajouter une légende, utilisez la balise <figcaption> à l'intérieur de la balise <figure>  pour décrire ou expliquer le contenu multimédia qu'elle entoure comme ceci:
+    -->
+
+    <!-- Lorsque l'on utilise un raccourci img+figcaption cela signifie que ces éléments sont au même niveau -->
+    <figure>
+        <img src="assets/img/unnamed (1).jpg" alt="">
+        <figcaption>Des cherccheurs américain ont réussi à démontrer dans des études que les chats faisaient baisser le niveau de stress de leurs propriétaires. Caresser un chat fait augmenter la production d'hormones du bonheur, tandis que la production d'hormones du stress diminue</figcaption>
+    </figure>
+
+    <h2>Les images de fond insérer en CSS</h2>
+
+
+    <!-- 
+        La balise div est une balise universelle, elle n'as pas de valeur sémantique, c'est une balise de division qui est utilisée pour grouper et diviser le contenu d'une page web en sections distinctes. "div" est une abréviation de "division", et la balise <div> est souvent utilisée comme un conteneur générique pour d'autres éléments HTML, permettant de les regrouper et d'appliquer des styles ou des comportements spécifiques à ce groupe.
+    -->
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam, natus cupiditate voluptate provident molestiae vero odit eos fuga quasi voluptates sint dignissimos libero sequi veniam in autem possimus ad?
+        Nisi assumenda nostrum iure odit et architecto, aliquam delectus similique. Minus et sit eveniet unde porro hic suscipit rerum laboriosam tenetur quo impedit mollitia molestiae, recusandae neque alias, totam nobis?
+        Numquam laboriosam reiciendis at obcaecati minima earum est maxime qui repudiandae nihil quisquam dicta, maiores voluptate debitis quae temporibus recusandae, consequuntur in ducimus omnis voluptas perferendis non ea placeat. Aliquid.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

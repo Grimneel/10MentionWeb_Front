@@ -1,0 +1,64 @@
+body {
+    background-color: black; /* La couleur de fond du corps de la page */
+    text-align: center;
+}
+
+h1 {
+    color: cadetblue;    /* la couleur du texte des balises <h1> en cadetblue */
+    text-transform: uppercase;    /* Transforme le texte des balises en majuscules */
+}
+
+h2 {
+    color: antiquewhite;
+    font-style: italic; /* Donner un style italic au texte */
+}
+
+img {
+    width: 500px; /* Ici on a défini la largeur des images à 500px */
+    height: 500px; /* Ici on a défini la hauteur de l'image à 500px */
+    border-radius: 1% 15% 2% 9%; /* Arrondit les coins de l'image avec un rayon de 1% 15% 2% et 9% */
+    /* border-style: solid; Ici on a définit le style de la bordure comme étant solide */
+    /* border-color: rgb(48, 158, 255); Ici on a défini la couleur de la bordure */
+    /* border-width: 5px; Ici on a défini la largeur de la bordure à 5px */
+
+    /* Il existe une syntaxe alternative pour définir le style, la largeur et la couleur de la bordure en une seule ligne */
+    border: double 5px rgb(48, 158, 255);
+    margin-right: 50px; /* On ajoute une marge à droite de l'image de 50px. Cela crée de l'espace entre l'image et d'autres éléments voisins sur le côté droit*/
+    
+    /* 
+        La propriété CSS margin est utilisée pour définir l'espace autour d'un élément. Elle contrôle l'espace entre les bords de l'élément et les éléments voisins. Elle peut prendre jusqu'à quatre valeurs qui définissent l'espace autour de l'élément dans l'ordre suivant : haut, droite, bas, gauche.
+        La syntaxe est =>  margin: top right bottom left;
+
+        - margin: 10px;  marge de 10 pixels sur tous les côtés 
+        - margin: 10px 20px; marge de 10 pixels en haut/bas, 20 pixels à gauche/droite 
+        - margin: 10px 20px 30px; marge de 10 pixels en haut, 20 pixels à gauche/droite, 30 pixels en bas 
+        - margin: 10px 20px 30px 40px; marge de 10 pixels en haut, 20 pixels à droite, 30 pixels en bas, 40 pixels à gauche 
+
+
+    */
+    padding: 25px;
+}
+
+figcaption,p {
+    color: rgb(255, 0, 0);
+}
+
+
+div {
+    height: 720px;
+    /* background-image: url(../img/fond-reves-magiques-dessines-main_23-2149676040.jpg); Ici ont défini l'image de fond */
+    /* background-repeat: no-repeat; Empeche la repetition de l'image de fond */
+    background-size: cover; /*Ajuster la taille de l'image de fond pour couvrir l'ensemble de l'élément*/
+    background: url(../img/fond-reves-magiques-dessines-main_23-2149676040.jpg) no-repeat center;
+    padding: 55px; /* Ajout une marge interne (espace intérieur de 55px à l'élément) */
+    margin: 55px; /* Ajout une marge externe (espace extérieur de 55px à l'élément) */
+
+}
+
+div p {
+    background-color: rgba(5, 19, 21, .6);
+    padding: 50px;
+    border-radius: 50px;
+    border-style: double;
+    border-color: black;
+}
