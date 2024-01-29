@@ -16,7 +16,7 @@ h2 {
 img {
     width: 500px; /* Ici on a défini la largeur des images à 500px */
     height: 500px; /* Ici on a défini la hauteur de l'image à 500px */
-    border-radius: 1% 15% 2% 9%; /* Arrondit les coins de l'image avec un rayon de 1% 15% 2% et 9% */
+    border-radius: 5%; /* Arrondit les coins de l'image avec un rayon de 1% 15% 2% et 9% */
     /* border-style: solid; Ici on a définit le style de la bordure comme étant solide */
     /* border-color: rgb(48, 158, 255); Ici on a défini la couleur de la bordure */
     /* border-width: 5px; Ici on a défini la largeur de la bordure à 5px */
@@ -36,7 +36,7 @@ img {
 
 
     */
-    padding: 25px;
+    padding: 5px;
 }
 
 figcaption,p {
@@ -57,8 +57,37 @@ div {
 
 div p {
     background-color: rgba(5, 19, 21, .6);
-    padding: 50px;
+    padding: 5px;
     border-radius: 50px;
     border-style: double;
     border-color: black;
 }
+
+/* style pour la classe nommée "imageCheval" */
+
+.imageCheval {
+    /* La propriété transition permet de spécifier une transition animée entre les états d'un élément */
+transition: 1s;
+
+}
+
+
+
+.imageCheval:hover {
+    /* La propriété transform avec la fonction scale(), permet de modifier l'echelle d'un éléments en modifiant sa taille. La fonction scale(), prend un argument, qui est le facteur d'échelle */
+    transform: scale(1.1); /* Agrandit l'élément à 110% de sa taille d'origine */
+
+}
+
+/* style pour la classe nommée "imageDauphin" */
+
+.imageDauphin {
+    display: block;
+    margin: 10px;
+    transition: transform 1s;
+}
+
+.imageDauphin:hover {
+    transform: rotate(-7deg); /* Fait tourner l'image de -7deg lorsqu'elle est survolée */
+}
+
