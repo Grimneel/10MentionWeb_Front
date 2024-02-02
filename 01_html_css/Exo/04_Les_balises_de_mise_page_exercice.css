@@ -16,6 +16,7 @@ header {
     border: #3c0753 solid 2px;
     padding: 8px;
     border-radius: 8px;
+    
 }
 
 header.hautdepage a {
@@ -32,6 +33,7 @@ header.hautdepage a {
 
 .hautdepage a:hover {
     background-color: #3c0753;
+    color: aquamarine;
 }
 
 article.main {
@@ -79,7 +81,7 @@ footer.piedepage {
 
 footer.piedepage ul{
     display: inline-block;
-    width: 30%;
+    width: 20%;
     list-style: none;
 
 }

@@ -1,0 +1,97 @@
+/*********** Le CSS générale ************/
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #EEEBED;
+    text-align: center;
+}
+
+a{
+    font-weight: bold;
+    background-color: #d9a9db;
+    border-radius: 10px;
+    
+}
+
+/************ style pour le header ************/
+header {
+    border: 2px #3c0753 solid;
+    padding: 20px;
+}
+
+/************ style pour le h1 **************/
+h1 {
+    text-transform: uppercase;
+    color: #3c0753;
+    font-size: 50px;
+}
+
+h1 a{
+    background-color: transparent;
+}
+
+/************ style pour le nav *************/
+nav a{
+    color: #fff;
+    display: inline-block;
+    width: 33%;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #3c0753;
+}
+
+/************* style pour le main **************/
+main{
+    border: 2px #3c0753 solid;
+    padding: 20px 50px;
+    margin-top: 10px;
+}
+
+main :first-child img{
+    border-radius: 50px;
+}
+
+main section:nth-child(2){ /* Pseudo class : nth-child(2) -> désigne le deuxième élément enfant dans un élément parent */
+    background-image: url(/01_html_css/assets/img/ligne_de_code.jpg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    border-radius: 50px;
+}
+
+main section:nth-child(2) article{
+   display: inline-block;
+   border: #d9a9db 1px solid;
+   width: 30%;
+   padding: 20px;
+   text-align: left;
+   background-color: black;
+}
+
+/************* style pour le footer *************/
+footer{
+    margin-top: 20px;
+    border: #3c0753 solid 2px;
+}
+
+footer ul {
+    display: inline-block;
+    width: 30%;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 20px;
+}
+
+footer a{
+    padding: 8px 12px;
+    color: #3c0753;
+}

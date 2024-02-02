@@ -1,0 +1,17 @@
+/************ style générale du css ***********/
+*{
+    box-sizing: border-box;
+}
+
+main section:nth-child(2){
+    border: 2px solid black;
+}
+
+main section:nth-child(2) p{
+    padding: 0px 25px 75px;
+    display: inline-block;
+}
+
+.n°1{
+    
+}
