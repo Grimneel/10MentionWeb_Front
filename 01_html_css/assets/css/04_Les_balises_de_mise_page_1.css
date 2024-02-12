@@ -17,6 +17,10 @@ div.navigation {
     
 }
 
+#conteneurB {
+    display: flex; 
+}
+
 .navigation a {
     background-color: #d9a9db;
     color: #fff;

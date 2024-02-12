@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #CBD285;
+    padding: 10px;
+}
+
+nav a {
+    color: black;
+    font-weight: bold;
+}
+
+/* div{
+    display: flex;
+}
+
+div:not(div.conteneurExo) {
+    background-color: #CBD285;
+    justify-content: space-evenly;
+    padding: 3px;
+} */
+
