@@ -1,4 +1,4 @@
-/* Feuille de style pour la page flexbox */
+/*************** Feuille de style pour la page flexbox ***************/
 *{
     box-sizing: border-box;
 }
@@ -231,4 +231,59 @@ Dans le contexte flex on vas  avoir un axe principale (main axis), il est par d�
 
 #conteneurE-AS :nth-child(2) {
     align-self: flex-end;
+}
+
+/****************** E - Retour à la ligne *******************/
+
+.style2 :nth-child(odd){ /*pseudo classe qui sélec. tous les éléments avec un ordre impaire*/
+    background-color: orange;
+}
+
+.style2 :nth-child(even) { /*pseudo classe qui sélec. tous les éléments avec un ordre paire*/
+    background-color: blue;
+}
+/* Si flex-wrap vaut nowrap et que les flex-items sont dans leur configuration par défaut, alors les flex-items seront rétrécis, si le flex-container est lui-même suffisamment rétréci*/
+
+
+#conteneurWrap {
+    flex-wrap: wrap; /* Si flex-wrap vaut wrap, alors les flex-items seront répartis sur une nouvelle ligne si le flex-container est suffisamment rétréci */
+
+}
+
+#conteneurWrapReverse {
+    flex-wrap: wrap-reverse; /* les éléments flexibles vont passer à la ligne de manière inversé par rapport à leur ordre d'origine*/
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+#stretch div {
+    height: auto;
+}
+
+#stretch {
+    align-content: stretch; /* Les deux lignes (ou plus) de flex-items s'étirent pour occuper tout l'espace disponible du flex-container*/
+
+}
+
+#start {
+    align-content: flex-start; /* Les deux lignes (ou plus) de flex-items sont réparties, sur le haut du flex-container, suivant l'axe secondaire*/
+
+}
+
+#end {
+    align-content: flex-end; /*Les deux lignes (ou plus) de flex-items sont réparties, sur le bas du flex-container, suivant de l'axe secondaire.*/
+}
+#center {
+    align-content: center; /* Les deux lignes (ou plus) de flex-items sont réparties, au centre du flex-container. L'espace disponible est équitablement réparti, de part et d'autre, de ces deux lignes*/
+}
+#between {
+    align-content: space-between; /* Les deux lignes (ou plus) de flex-items sont placées contre les bords du flex-container. L'espace restant est placé entre les deux lignes.*/
+}
+#around {
+    align-content: space-around; /*L'espace disponible est réparti entre les deux lignes de flex-items et les bords du flex-container. L'espace sur les bords vaut la moitié de l'espace entre les lignes.*/
+}
+#evenly {
+    align-content: space-evenly; /* L'espace disponible est réparti de manière équitable entre les deux lignes de flex-items et les bords du flex-container.*/
 }
