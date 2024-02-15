@@ -1,0 +1,27 @@
+/***************** Style générale de la page *****************/
+*{
+    box-sizing: border-box;
+}
+
+/***************** Header *****************/
+img {
+    width: 25%;
+}
+
+/***************** Section *****************/
+
+ul {
+    background-color: #CAA6A6;
+    list-style: none;
+    width: 300px;
+    height: fit-content;
+}
+
+li {
+    background-color: #FFE7E7;
+    width: 200px;
+    margin: 50px;
+    padding: 25px;
+    border-radius: 50px;
+    text-align: center;
+}
