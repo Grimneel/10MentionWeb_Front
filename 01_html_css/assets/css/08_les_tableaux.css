@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffe7e7;
+}
+
+h1 {
+    text-align: center;
+}
+
+caption {
+    color: #6e2142;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table {
+    border: 3px #6e2142 solid;
+    width: 90%;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #fff6e9;
+    /* par défaut la bordure contient 2 traits, pour que le trait soit unique, on utilise la propriété border collapse avec une valeur collapse */
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+th, td {
+    border: 2px #6e2142 solid;
+    padding: 10px;
+}
+
+thead, tfoot {
+    background-color: #be7575;
+}
