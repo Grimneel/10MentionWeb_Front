@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: none;
+    margin: none;
+}
+
+body {
+    width: 100%;
+}
+
+header div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+header div p{
+    padding: 50px;
+    background-color: #008B8B;
+}
+
+header div a{
+    /* display: flex;
+    justify-content: space-evenly; */
+    padding: 50px;
+    background-color: #FFEBCD;
+}

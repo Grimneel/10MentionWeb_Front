@@ -39,3 +39,41 @@ th, td {
 thead, tfoot {
     background-color: #be7575;
 }
+
+#demoRowspan tr :first-child:not(:last-child){
+    background-color: #be7575;
+}
+
+/************* exo 1 ****************/
+
+#exo1 td, #exo2 td {
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.noir {
+    background-color: black;
+    border: solid;
+}
+
+.rouge {
+    background-color: red;
+}
+
+.borderT {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.borderLeft {
+    border-top-left-radius: 20px;
+}
+
+.borderRight {
+    border-top-right-radius: 20px;
+}
+
+#exoRowspan td{
+    border: none;
+}

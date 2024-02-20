@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFE7E7;
+}
+
+table {
+    border: 3px solid #6E2142;
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td, th {
+    border: 2px solid #6E2142;
+    background-color: #BE7575;
+    padding: 15px;
+}
+
+td {
+    background-color: #FFF6E9
+}
+
+caption {
+    color: #6E2142;
+    font-weight: bold;
+    text-transform: uppercase;
+}
