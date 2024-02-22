@@ -50,30 +50,73 @@ header nav:last-child {
 
 /******** Style pour le main ********/
 
-main #section1 {
+main {
+    height: 75%;
+}
+
+#section1 div, #section2 div{
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     text-align: center;
 }
 
-main #section1 div article:first-child {
+#section1 div article:first-child {
     background-color: #A9A9A9;
     width: 50%;
     padding: 50px;
 }
 
-main #section1 div article:last-child {
+#section1 div article:last-child {
     background-color: #708090;
     width: 50%;
     padding: 50px;
 }
 
+#section1 {
+    border: solid 15px white;
+}
+
+#section2 div p {
+    width: 100%;
+    background-color: #B0E0E6;
+    padding: 30px;
+}
+
+#section2 div article:first-child {
+    background-color: #87CEEB;
+    width: 25%;
+    padding: 80px;
+}
+
+#section2 div article:nth-child(2) {
+    background-color: #40E0D0;
+    width: 25%;
+    padding: 80px;
+}
+
+#section2 div article:nth-child(3) {
+    background-color: #2E8B57;
+    width: 25%;
+    padding: 80px;
+}
+
+#section2 div article:last-child {
+    background-color: #98FB98;
+    width: 25%;
+    padding: 80px;
+}
 /******** Style pour le footer ********/
 
 footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer div{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -81,9 +124,11 @@ footer {
 footer div p:first-child {
     width: 50%;
     background-color: #DB7093;
+    padding: 30px;
 }
 
 footer div p:last-child {
     width: 50%;
     background-color: #AFEEEE;
+    padding: 30px;
 }
