@@ -75,7 +75,7 @@ main {
 }
 
 #section1 {
-    border: solid 15px white;
+    margin: 10px;
 }
 
 #section2 div p {
@@ -131,4 +131,266 @@ footer div p:last-child {
     width: 50%;
     background-color: #AFEEEE;
     padding: 30px;
+}
+
+/************* Style pur le media 480p x****************/
+
+@media (max-width:480px) {
+    body {
+        width: 99%;
+        border: solid 1px;
+    }
+    
+    /******** Style pour le header ********/
+    header {
+        width: 100%;
+    }
+
+    header div{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    header div:first-child, header div:nth-child(2) {
+        width: 50%;
+        padding: 15px;
+        justify-content: center;
+    }
+    
+    header div:nth-child(3) {
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav:last-child {
+        display: none;
+    }
+    
+    header div:first-child {
+        background-color: #5F9EA0;
+    }
+    
+    header div:nth-child(2) {
+        background-color: #008B8B;
+    }
+    
+    header div:nth-child(3) {
+        background-color: #00CED1;
+    }
+    
+    
+    /******** Style pour le main ********/
+    
+    main {
+        height: 75%;
+    }
+    
+    #section1 div, #section2 div{
+        width: 100%;
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    #section1 div article:first-child {
+        background-color: #A9A9A9;
+        width: 100%;
+        padding: 50px;
+    }
+    
+    #section1 div article:last-child {
+        background-color: #708090;
+        width: 100%;
+        padding: 50px;
+    }
+    
+    #section1 {
+        margin: 10px;
+    }
+    
+    #section2 div p {
+        width: 100%;
+        background-color: #B0E0E6;
+        padding: 30px;
+    }
+    
+    #section2 div article:first-child {
+        background-color: #87CEEB;
+        width: 50%;
+        padding: 80px;
+    }
+    
+    #section2 div article:nth-child(2) {
+        background-color: #40E0D0;
+        width: 50%;
+        padding: 80px;
+    }
+    
+    #section2 div article:nth-child(3) {
+        background-color: #2E8B57;
+        width: 50%;
+        padding: 80px;
+    }
+    
+    #section2 div article:last-child {
+        background-color: #98FB98;
+        width: 50%;
+        padding: 80px;
+    }
+    /******** Style pour le footer ********/
+    
+    footer {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer div{
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    footer div p:first-child {
+        width: 50%;
+        background-color: #DB7093;
+        padding: 30px;
+    }
+    
+    footer div p:last-child {
+        width: 50%;
+        background-color: #AFEEEE;
+        padding: 30px;
+    }
+}
+
+/************* Style pur le media 768px ****************/
+
+@media (min-width:480px) and (max-width:768px) {
+    body {
+        width: 99%;
+        border: solid 1px;
+    }
+    
+    /******** Style pour le header ********/
+    header {
+        width: 100%;
+    }
+
+    header div{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    header div:first-child, header div:nth-child(2), header div:nth-child(3) {
+        width: 33%;
+        padding: 15px;
+        justify-content: center;
+    }
+    
+
+    header nav:last-child {
+        display: none;
+    }
+    
+    header div:first-child {
+        background-color: #5F9EA0;
+    }
+    
+    header div:nth-child(2) {
+        background-color: #008B8B;
+    }
+    
+    header div:nth-child(3) {
+        background-color: #00CED1;
+    }
+    
+    
+    /******** Style pour le main ********/
+    
+    main {
+        height: 75%;
+    }
+    
+    #section1 div, #section2 div{
+        width: 100%;
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    #section1 div article:first-child {
+        background-color: #A9A9A9;
+        width: 100%;
+        padding: 50px;
+    }
+    
+    #section1 div article:last-child {
+        background-color: #708090;
+        width: 100%;
+        padding: 50px;
+    }
+    
+    #section1 {
+        margin: 10px;
+    }
+    
+    #section2 div p {
+        width: 100%;
+        background-color: #B0E0E6;
+        padding: 30px;
+    }
+    
+    #section2 div article:first-child {
+        background-color: #87CEEB;
+        width: 50%;
+        padding: 80px;
+    }
+    
+    #section2 div article:nth-child(2) {
+        background-color: #40E0D0;
+        width: 50%;
+        padding: 80px;
+    }
+    
+    #section2 div article:nth-child(3) {
+        background-color: #2E8B57;
+        width: 50%;
+        padding: 80px;
+    }
+    
+    #section2 div article:last-child {
+        background-color: #98FB98;
+        width: 50%;
+        padding: 80px;
+    }
+    /******** Style pour le footer ********/
+    
+    footer {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer div{
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    footer div p:first-child {
+        width: 50%;
+        background-color: #DB7093;
+        padding: 30px;
+    }
+    
+    footer div p:last-child {
+        width: 50%;
+        background-color: #AFEEEE;
+        padding: 30px;
+    }
 }
