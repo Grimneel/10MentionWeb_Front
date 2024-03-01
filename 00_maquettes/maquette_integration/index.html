@@ -11,6 +11,7 @@
       <!-- type="image/x-icon" : Cela spécifie le type MIME de l'icône, indique que l'icône est un fichier d'image au format ICO. Cependant, il est courant de voir des icônes au format JPEG ou PNG également, bien que le type MIME spécifié soit "image/x-icon". Les navigateurs modernes sont généralement flexibles en termes de types d'images pris en charge pour les favicons. -->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/commun_style.css">
+    <link rel="stylesheet" href="assets/css/style.css"
     <title>Maquette integration</title>
 </head>
 <body>
@@ -29,20 +30,20 @@
     <!-- Le corps de la page d'accueil -->
     <main>
         <!-- premier éléments du main -->
-        <div>
-            <div>
+        <div class="bientot">
+            <div class="col-lg-3">
                 <a href="index.html">Accueil</a>
             </div>
-            <div>
+            <div class="col-lg-3">
                 <a href="a_propos.html">A propos</a>
             </div>
-            <div>
+            <div class="col-lg-3">
                 <a href="contact.html">Contact</a>
             </div>
         </div>
 
         <section>
-            <div>
+            <div class="col-lg-5">
                 <h2>Titre</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ut, suscipit aliquam quisquam saepe obcaecati corrupti aliquid deleniti incidunt minus eaque sequi, dolore ducimus velit, nisi soluta provident doloribus neque.</p>
     
@@ -58,45 +59,46 @@
     
                 </audio>
             </div>
-            <div>
+            <div class="col-lg-5">
                 <img src="assets/img/s2b2.jpeg" alt="boule d'énergie">
             </div>
-            <div>
-                <div>
-                    <!-- 
-                        <video> est une balise HTML utilisée pour incorporer des fichiers vidéo dans une page web.
-                             * autoplay : indique au navigateur de démarrer automatiquement la lecture de la vidéo dès que la page est chargée. 
-                            * muted : indique que la vidéo doit être lue sans son.  Souvent utilisé pour les vidéos d'arrière-plan ou lorsque le son n'est pas essentiel à l'expérience utilisateur
-                    -->
-                    <video controls autoplay muted>
-                        <source src="assets/video/test.mp4" type="video/mp4">
-
-                    </video>
-                </div>
-                <div>
-                    <img src="assets/img/s3b2.jpeg" alt="carte mère">
-                </div>
-            </div>
+           
         </section>
+        <div>
+            <div class="col-lg-4">
+                <!-- 
+                    <video> est une balise HTML utilisée pour incorporer des fichiers vidéo dans une page web.
+                         * autoplay : indique au navigateur de démarrer automatiquement la lecture de la vidéo dès que la page est chargée. 
+                        * muted : indique que la vidéo doit être lue sans son.  Souvent utilisé pour les vidéos d'arrière-plan ou lorsque le son n'est pas essentiel à l'expérience utilisateur
+                -->
+                <video controls autoplay muted>
+                    <source src="assets/video/test.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            <div class="col-lg-8">
+                <img src="assets/img/s3b2.jpeg" alt="carte mère">
+            </div>
+        </div>
 
 
     </main>
     <!-- pied de la page -->
     <footer>
         <ul>
-            <li><a href="#"></a>Lien</li>
-            <li><a href="#"></a>Lien</li>
-            <li><a href="#"></a>Lien</li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
         </ul>
         <ul>
-            <li><a href="#"></a>Lien</li>
-            <li><a href="#"></a>Lien</li>
-            <li><a href="#"></a>Lien</li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
         </ul>
         <ul>
-            <li><a href="#"></a>Lien</li>
-            <li><a href="#"></a>Lien</li>
-            <li><a href="#"></a>Lien</li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
         </ul>
 
     </footer>

@@ -13,7 +13,7 @@
 
 body {
     background-color: var(--color_black);
-    color: var(--color_white);
+    /* color: var(--color_white); */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -25,6 +25,7 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/******************************** HEADER ************************/
 header {
     /* dans le header j'applique le display flex avec la valeur flex afin de pouvoir gérer l'emplacement de mes éléments sur l'axe principale (axe horizontale) et l'axe secondaire (axe verticale) */
     display: flex;
@@ -34,6 +35,10 @@ header {
     border-bottom: .1rem solid rgba(255, 255, 255 , .1);
     box-shadow: 0 .4rem .8rem rgba(0, 0, 0, .5);
     padding: 1rem 2rem;
+}
+
+header nav {
+    display: flex;
 }
 
 header img {
@@ -53,11 +58,44 @@ header nav a {
     font-weight: bolder;
     text-transform: uppercase;
     margin-left: 4rem;
-    /* scale: 1; */
+    /* 
+    https://www.w3schools.com/css/css3_transitions.asp
+    https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition_speed
+    all : la transition s'applique sur toutes les propriétés qui ont les valeurs changées   
+    linear : spécifie un effet de transition avec la même vitesse du début à la fin
+    un délai : (en secondes) pour l'effet de transition. */
     transition: all linear 0.2s;
 }
 
 header nav a:hover {
     color: var(--color_white);
     scale: 1.2;
+}
+
+/************************* FOOTER **************************/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    padding: 40px;
+    color: var(--color_white);
+    background-color: #101010;
+    border-top: .1rem solid rgba(255, 255, 255 , .1);
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, .5);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 33%;
+}
+
+footer ul:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255 , .2);
+    border-right: 1px solid rgba(255, 255, 255 , .2);
+
 }
