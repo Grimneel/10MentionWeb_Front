@@ -22,10 +22,10 @@
             * du titre et a : Lora (Google Fonts)
             * les h2 : Verdana
             * le reste : Arial,sans-serif
-- La taille de la police de votre document est à 62.5%
+- La taille de la police de votre document est à 62.25%
 - Taille de police : 
     * Page accueil : 
-        * a : 18px
+        * a : 16px
         * h2 : 50px
         * p : 15px
 
@@ -36,7 +36,6 @@
 
     * Page contact :
         * h1 : 100px
-        * h3 : 32px
         * input : 16px
         * button : 20px
 - L'image qui s'appelle s1b1 doit être utilisée comme icone pour l'onglet de la page
