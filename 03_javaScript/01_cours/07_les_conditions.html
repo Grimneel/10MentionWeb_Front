@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les conditions en JS</title>
+</head>
+<body>
+    
+    <script>
+
+            document.write("<h2>Opérateur logiques </h2>")
+
+
+            // Les opérateurs de comparaison pour les structures conditionnelle
+
+            /*
+            
+                >   strictement supérieur
+                <   strictement inférieur
+                > = supérieur ou égal
+                < = inférieur ou égal
+                ==  pour faire une comparaison de valeur // il permet de vérifier que les valeurs de 2 variables sont identiques
+                === pour faire une comparaison de valeur et de type // signifie "STRICTEMENT Égal À" // Il permet de vérifier la VALEUR ET le TYPE 
+                != différent de en valeur
+                !== STRICTEMENT différent de (VALEUR ET TYPE)       
+            
+            */
+            let br = '<br>'
+            let nbr1 = 1, nbr2 = 3;
+
+            document.write(nbr1 > nbr2); // false
+            document.write(br);
+            document.write(nbr1 >= nbr2); // false
+            document.write(br);
+            document.write(nbr1 < nbr2); // true
+            
+            let nbr3 = 2, nbr4 = "2"
+            document.write(br);
+            document.write(nbr3 > nbr4); // false
+            document.write(br);
+            document.write(nbr3 == nbr4); // true
+            document.write(br);
+            document.write(nbr3 === nbr4); //false 
+
+            
+            // Opérateurs logiques
+            
+            /*
+            
+            AND -> &&
+            OR -> ||  (AltGr + 6)
+            NOT -> !
+            */
+           
+           // Opérateur AND : il évalue le résultat en TRUE si les expressions sont TRUE, si l'une des deux expressions testé est FALSE alors le résultat sera FALSE
+           document.write("<h2>Opérateur AND </h2>")
+           
+                document.write(br);
+                document.write(true && true); // true
+                document.write(br);
+                document.write(true && false); // false
+                document.write(br)
+                document.write(false && false); // false
+
+            // Opérateurs OR : il evalue le résultat en TRUE si une ou deux expressions sont TRUE, si les deux expressions sont FALSE alors le résultat sera FALSE
+            document.write("<h2>Opérateur OR </h2>")
+
+                document.write(br);
+                document.write(true || true); // true
+                document.write(br);
+                document.write(true || false); // true
+                document.write(br)
+                document.write(false || false); // flase
+
+
+            // Opérateur NOT : il transforme ce qui est TRUE en FALSE et ce qui est FALSE en TRUE
+            document.write("<h2>Opérateur NOT </h2>")
+
+                document.write(br);
+                document.write(!true); // false
+                document.write(br);
+                document.write(!false); // true
+                document.write(br)
+
+            //------------------
+                // SYNTAXE
+            //------------------
+
+            let condition = true;
+            // if
+
+            if (condition) {
+                /* le code si la condition est VRAIE*/
+            }
+
+//--------------------------------------------------------------------------------------------------------------------------------
+            // if else
+
+            if (condition) {
+                /* le code si la condition est VRAIE*/
+            } else {
+                /* le code si la condition est FAUSSE*/
+            }
+
+//--------------------------------------------------------------------------------------------------------------------------------
+            // if else if else
+
+            if (condition) {
+                /* le code si la condition est VRAIE*/
+            } else if(condition) {
+                    /* le code si la condition est VRAIE*/
+            } else {
+                    /* le code si toutes les autres condition est FAUSSES*/ 
+            }
+
+//--------------------------------------------------------------------------------------------------------------------------------
+
+            let age = 20;
+
+            if (age > 18) { // true
+
+                document.write("Vous êtes majeur <br>");
+            }
+
+            if (age >= 20) { //true
+
+                document.write("Vous êtes majeur <br>");
+            }
+
+            if (age < 18) { //false
+
+                document.write("Vous êtes mineur");
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
