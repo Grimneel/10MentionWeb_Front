@@ -182,32 +182,32 @@
                     =>afficher  "Vous n\avez pas saisi de nombre !"   
         */
 
-        let moyenneBac = prompt("Quelle est votre moyenne au bac ?");
+        // let moyenneBac = prompt("Quelle est votre moyenne au bac ?");
 
-        if (isNaN('moyenneBac')) {
+        // if (isNaN('moyenneBac')) {
 
-            if (moyenneBac>=0 && moyenneBac<10) {
+        //     if (moyenneBac>=0 && moyenneBac<10) {
 
-                document.write("Tu es recalé !");
+        //         document.write("Tu es recalé !");
 
-            } else if ( moyenneBac>=10 && moyenneBac<=11){
+        //     } else if ( moyenneBac>=10 && moyenneBac<=11){
             
-                document.write("Tu passe , sans mention !");
+        //         document.write("Tu passe , sans mention !");
             
-            } else if (moyenneBac>=12 && moyenneBac<=20){
+        //     } else if (moyenneBac>=12 && moyenneBac<=20){
             
-                document.write("Reçu avec mention !");
+        //         document.write("Reçu avec mention !");
             
-            } else if (moyenneBac < 0 || moyenneBac >= 21){
+        //     } else if (moyenneBac < 0 || moyenneBac >= 21){
             
-                document.write("La moyenne doit être comprise entre 0 et 20 !");
-            }
+        //         document.write("La moyenne doit être comprise entre 0 et 20 !");
+        //     }
         
-        } else if (parseFloat(isNaN('moyenneBac'))){
+        // } else if (parseFloat(isNaN('moyenneBac'))){
 
-                document.write("Vous n'avez pas saisi de nombre !");
+        //         document.write("Vous n'avez pas saisi de nombre !");
 
-            }
+        //     }
         
 
 
@@ -242,13 +242,43 @@
         // }
 
 
-        let nbrScript =  prompt("Saisir un nombre positif >0");
-        let pair = [0, 2, 4, 6, 8, 10];
-        let impair = [1, 3, 5, 7, 9];
+        let nbr =  prompt("Entrez un nombre");
 
+        if (isNaN(nbr)) {
+
+            document.write("Vous n'avez pas saisi de nombre !");
+
+        } else {
+
+            if (Math.sign(nbr) == -1 || Math.sign(nbr) == 0) {
+
+                document.write("le nombre doit être différent de 0 et positif");
+
+            } else {
+
+                while (nbr <= 10) {
+                    
+                    if (nbr % 2 == 0) {
+                        document.write(` le nombre ${nbr} est pair <br> `);
+
+                    } else {
+
+                        document.write(`le nombre ${nbr} est impair <br>`);
+
+                    }
+
+                    nbr++
+
+                }
+
+            }
+
+            
+        }
         
 
-
+        document.write("<br>");
+        document.write("<br>");
 
 
 
@@ -257,8 +287,18 @@
         // Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
 
 
+        let reponse = '';
+        let i = 1;
+        while (reponse.toLowerCase() !== "oui" && reponse.toLowerCase() !== "non") {
+            
+            reponse = prompt("Alors ano joue au ni oui ni non ?!");
+            document.write("La " + i + " fois vous avez inséré " + " " + reponse + "<br>")
+            i++
+        }
 
+            document.write("Désolé vous avez perdu!");
 
+    
 
 
 
@@ -272,7 +312,20 @@
             il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
         */
 
+        for (let i = 0; i < 20; i++) {
+            if (i % 3 == 0 && i % 5 != 0) {
 
+                document.write("Grala <br>");
+            } else if (i % 5 == 0 && i % 3 != 0) {
+
+
+                document.write("Bu <br>");
+            } else if (i % 5 == 0 && i % 3 == 0) {
+
+                document.write("GralaBu <br>");
+            }
+
+        }
 
 
     </script>
