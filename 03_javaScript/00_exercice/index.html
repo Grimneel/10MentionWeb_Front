@@ -20,7 +20,7 @@
 
         //         alert(nom + " " + prenom);
 
-
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
 
         // // Exercice 2
         // // Ecrivez un programme js qui fait saisir un prix hors taxes à l'utilisateur, puis qui affiche le prix TTC correspondant en se basant sur un taux de TVA à 20%
@@ -39,7 +39,7 @@
         // alert(prixTTC);
         // document.write(prixTTC);
 
-
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
 
         // // Exercice 3
         // // Ecrivez un programme qui fait saisir une température en degrés celsius, puis affiche le résultat de sa conversion en degrés fahrenheit.
@@ -53,6 +53,7 @@
         // alert(fahrenheit);
         // document.write(fahrenheit);
 
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
 
         // Exercice 4 : if, else, else if
 
@@ -76,7 +77,7 @@
         //         alert("problème sur les informations saisies");  // sinon j'affiche un message d'erreur
         //     }
 
-
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
 
         // Exercice 5 : les boucles
         /*
@@ -113,7 +114,7 @@
         document.write("<br>")
 
 
-
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
          // Exercice 6
@@ -168,6 +169,9 @@
 
             document.write("<br>");
 
+
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
+
         // Exercice 7
         /* 
             Créer un script qui permet de :
@@ -210,7 +214,7 @@
         //     }
         
 
-
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -242,65 +246,65 @@
         // }
 
 
-        let nbr =  prompt("Entrez un nombre");
+        // let nbr =  prompt("Entrez un nombre");
 
-        if (isNaN(nbr)) {
+        // if (isNaN(nbr)) {
 
-            document.write("Vous n'avez pas saisi de nombre !");
+        //     document.write("Vous n'avez pas saisi de nombre !");
 
-        } else {
+        // } else {
 
-            if (Math.sign(nbr) == -1 || Math.sign(nbr) == 0) {
+        //     if (Math.sign(nbr) == -1 || Math.sign(nbr) == 0) {
 
-                document.write("le nombre doit être différent de 0 et positif");
+        //         document.write("le nombre doit être différent de 0 et positif");
 
-            } else {
+        //     } else {
 
-                while (nbr <= 10) {
+        //         while (nbr <= 10) {
                     
-                    if (nbr % 2 == 0) {
-                        document.write(` le nombre ${nbr} est pair <br> `);
+        //             if (nbr % 2 == 0) {
+        //                 document.write(` le nombre ${nbr} est pair <br> `);
 
-                    } else {
+        //             } else {
 
-                        document.write(`le nombre ${nbr} est impair <br>`);
+        //                 document.write(`le nombre ${nbr} est impair <br>`);
 
-                    }
+        //             }
 
-                    nbr++
+        //             nbr++
 
-                }
+        //         }
 
-            }
+        //     }
 
             
-        }
+        // }
         
 
         document.write("<br>");
         document.write("<br>");
 
-
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
 
         //Exercice 9
 
         // Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
 
 
-        let reponse = '';
-        let i = 1;
-        while (reponse.toLowerCase() !== "oui" && reponse.toLowerCase() !== "non") {
+        // let reponse = '';
+        // let i = 1;
+        // while (reponse.toLowerCase() !== "oui" && reponse.toLowerCase() !== "non") {
             
-            reponse = prompt("Alors ano joue au ni oui ni non ?!");
-            document.write("La " + i + " fois vous avez inséré " + " " + reponse + "<br>")
-            i++
-        }
+        //     reponse = prompt("Alors ano joue au ni oui ni non ?!");
+        //     document.write("La " + i + " fois vous avez inséré " + " " + reponse + "<br>")
+        //     i++
+        // }
 
-            document.write("Désolé vous avez perdu!");
+        //     document.write("Désolé vous avez perdu!");
 
     
 
-
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
         //Exercice 10
@@ -327,6 +331,78 @@
 
         }
 
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
+
+        //Exercice 11
+        /*
+            Créez un array vide = []
+            Puis créez une fonction qui prendra 2 paramètres: 2 nombres
+            Le seul but de la fonction sera de pousser le premier nombre à la suite de l'array
+            x fois, par rapport au 2eme nombre
+            Exemple: pousser(8, 5) => [8, 8, 8, 8, 8]
+        */
+
+        let tableau = [];
+        
+        function pousser(nbr6, nbr7) {
+            for (let t = 0; t < nbr7; t++) {
+
+                tableau[nbr7] = nbr6;      
+                console.log(tableau);
+                document.write(tableau);
+            }
+        }
+
+        pousser(8, 5);
+        pousser(10, 5);
+        pousser(12, 5);
+        pousser(14, 5);
+        pousser(16, 5);
+
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
+        //Exercice 12
+
+        /*
+            Créez un array avec plusieurs nombres à l'intérieur
+
+            Créez une fonction qui permet de calculer la somme des nombres, de manière automatique
+        */
+
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
+
+        //Exercice 13
+        /*
+            A l'aide de ce tableau et d'une boucle:
+        */
+
+        // const clients = [
+        //     {
+        //         firstname: "Claire",
+        //         age: 28,
+        //     },
+        //     {
+        //         firstname: "Max",
+        //         age: 32,
+        //     },
+        //     {
+        //         firstname: "Léo",
+        //         age: 23,
+        //     },
+        // ];
+
+        // Calculez et affichez dans le terminal la somme des âges.
+
+
+
+    //---------------------------------------------------------------------------------------------------------------------------------------------------
+
+        // Exercice 14
+
+        /* Créer une fonction qui doit déterminer si un utilisateur à insérer correctement un @ dans son adresse email.
+            Puis afficher le résultat: true ou false
+            ex: testEmail('julien@gmail.com') => true
+            ex: testEmail('julien.gmail.com') => false
+        */
 
     </script>
 </body>
