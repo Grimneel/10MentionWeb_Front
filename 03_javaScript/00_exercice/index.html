@@ -342,22 +342,35 @@
             Exemple: pousser(8, 5) => [8, 8, 8, 8, 8]
         */
 
-        let tableau = [];
         
-        function pousser(nbr6, nbr7) {
-            for (let t = 0; t < nbr7; t++) {
+            //......................................
+            document.write("<br>")
+            let tableau = [];
 
-                tableau[nbr7] = nbr6;      
-                console.log(tableau);
-                document.write(tableau);
+            let nombres = parseFloat(prompt("Entrez un nombre A ?"));
+            let fois = parseFloat(prompt("Entrez un nombre B ?"));
+
+            function pousser(nombres, fois) {
+            for (let i = 0; i < fois; i++) {
+            tableau.push(nombres);
             }
-        }
+            document.write("tableau :" + tableau + "<br>")
+            tableau = [];
+            
+            };
+            pousser(nombres, fois);
+            pousser(5, 4);
+            console.table(tableau);
 
-        pousser(8, 5);
-        pousser(10, 5);
-        pousser(12, 5);
-        pousser(14, 5);
-        pousser(16, 5);
+            let maFonction = (nbr1, nbr2) => {
+                let table = [];
+                for (let i = 0; i < nbr2; i++){
+                    table.push(nbr1);
+                }
+                document.write('myArray = [' + table + '] <br>')
+            }
+            maFonction(10,20);
+            maFonction(9,7);
 
     //---------------------------------------------------------------------------------------------------------------------------------------------------
         //Exercice 12
@@ -367,6 +380,43 @@
 
             Créez une fonction qui permet de calculer la somme des nombres, de manière automatique
         */
+
+        // 1ère façcon de faire
+
+        let tab = [50, 7, 20, 60, 10];
+
+        let sommeTableau = ()=> {
+            let somme = 0;
+            for (let i = 0; i < tab.length; i++) {
+                
+                somme+= tab[i]; // somme = somme + tab[i]
+            }
+            document.write(somme + "<br>");
+        }
+        sommeTableau();
+
+
+
+        // 2ème façcon de faire
+        let monArray = function(nombre) {
+            let k = 0;
+            for (let i = 0; i < nombre.length; i++) {
+                k+= nombre[i]; // k = k+ nombre[i]
+
+            // k = 0 + 5 = 5
+            // k = 5 + 40 = 45
+            // k = 45 + 15 = 60
+            // k = 60 + 60 = 120
+            
+            }
+            return k; // la fonction retourne une valeur : la somme des éléments dans le tableau
+        }
+        document.write(monArray([5, 40, 15, 60]));
+        
+        
+        
+        
+
 
     //---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -391,6 +441,63 @@
         // ];
 
         // Calculez et affichez dans le terminal la somme des âges.
+        
+
+        let clients = [
+            // 0
+            {
+                firstname: "Claire",
+                age: 28,
+            },
+            // 1
+            {
+                firstname: "Max",
+                age: 32,
+            },
+            // 2
+            {
+                firstname: "Léo",
+                age: 23,
+            },
+        ];
+
+
+            // 1ère façon de faire
+        let totalAge = 0;
+
+        // for (let client of clients) {
+
+        //     totalAge += client.age // totalAge= totalAge + client.age
+
+
+        // }
+
+        // document.write(` la somme des  âges : ${totalAge} <br>`);
+
+
+            // 2ème façon de faire : boucle for
+
+        // for (let i = 0; i < clients.length; i++) {
+        //         totalAge += clients[i].age
+
+        //     }
+        
+        // document.write(` la somme des  âges : ${totalAge} <br>`);
+        
+
+            // 3ème façon de faire : boucle while
+        let index = 0;
+
+        while( index > clients.length ) {
+            totalAge += clients[index].age;
+
+
+            index++ ;
+
+
+        }
+        document.write(` la somme des  âges : ${totalAge} <br>`);
+
 
 
 
@@ -403,6 +510,51 @@
             ex: testEmail('julien@gmail.com') => true
             ex: testEmail('julien.gmail.com') => false
         */
+
+        let email = prompt("Entrez votre adresse email !"); // sahar@gmail.fr
+
+        // function verifEmail(email) {
+
+        //     let e = 0
+        //     let j;
+
+        //     while( e < email.length){
+
+        //         if (email[e] === "@") {
+                    
+        //             j = email[e]; // e = @
+        //         }
+        //         e++;
+        //     }
+        //     if (j == "@") {
+
+        //         document.write("true");
+
+        //     } else {
+        //         document.write("false");
+        //     }
+        // }
+        // verifEmail(email);
+
+        // avec la fonction indexOf()
+
+        function verif(email) {
+            let index = email.indexOf("@");
+
+            if (index == -1) {
+
+                document.write("false");
+
+            } else {
+                
+                document.write("true");
+            }
+
+
+        }
+
+        verif(email)
+        
 
     </script>
 </body>
