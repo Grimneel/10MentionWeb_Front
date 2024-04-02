@@ -43,3 +43,8 @@ let emoji = document.querySelector('.bloc-btn i')
 emoji.addEventListener('click', ()=> {
     emoji.classList.toggle('bi-emoji-wink');
 });
+
+
+let btnAbonner = document.querySelector('.btn-abonner');
+btnAbonner.addEventListener('click', )
+btnAbonner.innerText = 'Abonner ✓'
