@@ -37,14 +37,69 @@ function changeMode() {
     titre.classList.toggle('colorTitre');
 }
 
+// ---------------------------------- Partie video ---------------------------------- //
+        // -------------------------- Icon smile -------------------------- //
 
 
-let emoji = document.querySelector('.bloc-btn i')
-emoji.addEventListener('click', ()=> {
-    emoji.classList.toggle('bi-emoji-wink');
+
+// 1ère façon de faire
+let iconeSmile = document.querySelector('.bi-emoji-neutral');
+
+if (iconeSmile.classList.contains('bi-emoji-neutral')) {
+    iconeSmile.classList.remove('bi-emoji-neutral');
+    iconeSmile.classList.add('bi-emoji-heart-eyes-fill');
+} else {
+    iconeSmile.classList.remove('bi-emoji-heart-eyes-fill');
+    iconeSmile.classList.add('bi-emoji-neutral');
+}
+
+
+// 2ème façon de faire
+// let emoji = document.querySelector('.bloc-btn i')
+// emoji.addEventListener('click', ()=> {
+//     emoji.classList.toggle('bi-emoji-wink');
+// });
+
+
+        // -------------------------- Bouton abonnez-vous -------------------------- //
+
+
+// let btnAbonner = document.querySelector('.btn-abonner');
+// btnAbonner.addEventListener('click', );
+// btnAbonner.innerText = 'Abonner ✓';
+
+// 1ère façon de faire
+// let btnAbonner = document.querySelector('.btn-abonner')
+// btnAbonner.addEventListener('click', ()=> {
+// btnAbonner.classList.toggle(btnAbonner.innerText = 'Abonner ✓');
+// });
+
+
+// 2ème façon de faire
+let btnAbonne = document.querySelector('.btn-abonner');
+
+btnAbonne.addEventListener('click', ()=> {
+
+    if( btnAbonne.innerText === 'Abonnez-vous') {
+
+        btnAbonne.innerHTML = 'Abonné <i class="bi bi-check"></i>';
+
+    } else {
+
+        btnAbonne.innerText = 'Abonnez-vous';
+    }
 });
 
+// -------------------------- Cookies -------------------------- //
 
-let btnAbonner = document.querySelector('.btn-abonner');
-btnAbonner.addEventListener('click', )
-btnAbonner.innerText = 'Abonner ✓'
+let btnCookies = document.querySelector('.btn-success');
+
+let cookies = document.querySelector('.cookies');
+
+btnCookies.addEventListener("click", ()=> {
+
+    // cookies.style.opacity = "0";
+    cookies.style.bottom = "auto";
+
+
+})

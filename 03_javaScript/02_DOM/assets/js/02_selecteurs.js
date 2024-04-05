@@ -180,10 +180,38 @@ console.log(valeurA);
 // Ce lien sera de couleur blanche et non souligné.
 
 
-let nouveauA = document.querySelector('h1');
-nouveauA = document.createElement('a');
-nouveauA = document.setAttribute("href");
+// let nouveauA = document.querySelector('h1');
+// nouveauA = document.createElement('a');
+// nouveauA.insertElement('h1', 'a');
+// nouveauA = document.setAttribute("href");
 
 
+// 1ère façon de faire
+let container = document.querySelector('h1');
+// let element = document.createElement('a');
+// element.setAttribute('href', 'https://developer.mozilla.org/fr/');
+// element.setAttribute('target', '_blank');
+// element.style.color = "white";
+// element.style.textDecoration = "none";
+// element.innerText = "Cours JS";
+// container.innerText = "";
+// container.append(element);
+// console.log(element);
 
 
+// 2ème façon de faire
+
+// container.innerHTML = "<a> Cours JavaScript </a>";
+// let element = document.querySelector('h1 a');
+// element.setAttribute('href', 'https://developer.mozilla.org/fr/');
+// element.setAttribute('target', '_blank');
+// element.style.color = "white";
+// element.style.textDecoration = "none";
+
+
+// 3ème façon de faire
+
+container.innerHTML = "<a href ='https://developer.mozilla.org/fr/' target='_blank' > Cours JavaScript </a>"
+let element = document.querySelector('h1 a');
+element.style.color = "white";
+element.style.textDecoration = "none";
