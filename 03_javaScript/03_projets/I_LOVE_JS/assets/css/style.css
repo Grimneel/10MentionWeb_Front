@@ -149,8 +149,6 @@ h1 {
     border: none;
     color: #f1bf2a;
 }
-/**************** player *****************/
-
 
 
 
@@ -248,8 +246,16 @@ h1 {
     }
 }
 
-/**************** Keydown *****************/
+/**************** Keyboard *****************/
+.mario {
+    position: relative;
+}
 
+#mario {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
 
 
 /**************** footer *****************/
