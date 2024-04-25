@@ -43,6 +43,8 @@ let form = document.querySelector('#form');
 let username = document.querySelector('#username');
 let email = document.querySelector('#email');
 let password2 = document.querySelector('#password2');
+let message = "";
+
 
 form.addEventListener('submit', (event)=>{
 
@@ -57,16 +59,41 @@ function formVerif() {
     let passwordValue = password.value.trim();
     let password2Value = password2.value.trim();
 
-    if (usernameValue.length < 2) {
+    // Username verify
+    if (usernameValue == "") { // Je vérifie si le champ username est vide
+        // Si c'est le cas je définie un message d'erreur approprié
+        message = 'Username ne doit pas être vide';
+        setError(username, message);
+    }
 
-        console.log('ok');
-    } else {
+    // Email verify
+    if (emailValue == "") { // Je vérifie si le champ username est vide
+        // Si c'est le cas je définie un message d'erreur approprié
+        message = 'Email ne doit pas être vide';
+        setError(email, message);
+    }
 
-        console.log(usernameValue.length);
-        console.log(emailValue.length);
-        console.log(passwordValue.length);
-        console.log(password2Value.length);
+    // Password verify
+    if (passwordValue == "") { // Je vérifie si le champ username est vide
+        // Si c'est le cas je définie un message d'erreur approprié
+        message = 'Le mot de passe ne peut pas être vide';
+        setError(password, message);
+    }
 
+    // Password2 verify
+    if (password2Value == "") { // Je vérifie si le champ username est vide
+        // Si c'est le cas je définie un message d'erreur approprié
+        message = 'La confirmation du mot de passe ne doit pas être vide';
+        setError(password2, message);
     }
 }
 
+
+function setError (element, infos){
+    let formControl = element.parentElement; // Je stock le parent de l'élément qui contient l'erreur (la div avec la classe form-control)
+    let small = formControl.querySelector('small');
+    // Ajout du message d'erreur 
+    small.innerText = infos;
+    
+}
+setError();
