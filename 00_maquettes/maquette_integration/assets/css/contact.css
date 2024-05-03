@@ -81,9 +81,44 @@ button:hover {
     background-color: #191919;
 }
 
+
+
 @media screen and (min-width: 991.99px) {
     h1 {
         font-size: 8rem !important;
     }
     
+}
+
+
+/* *********************** Vérification email *********************** */
+
+.form-control small {
+
+    visibility: hidden;
+}
+
+
+.form-control.error small {
+    color: red;
+    visibility: visible;
+}
+
+.form-control.error input {
+    border: 1px solid red;
+}
+
+.form-control.error .fa-exclamation {
+    color: red;
+    visibility: visible;
+}
+
+.form-control.success input {
+    border: 1px solid green;
+}
+
+.form-control.success .fa-circle-check {
+    color:  green;
+    visibility: visible !important;
+
 }

@@ -24,6 +24,58 @@ h2 {
     font-family: Verdana, 'Geneva', Tahoma, sans-serif;
 }
 
+/**************** loader *****************/
+
+#loader {
+    height: 100vh;
+    width: 100vw;
+    background-color: #CBE6FF;
+    position: fixed;
+    z-index: 1;
+}
+.icon-loader {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #61b3ff;
+    border-top: 10px solid #1E2337;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
+    animation-name: loader; /*Le nom de la keyframes*/
+    animation-duration: 1s; /*l'animation dure 1 seconde*/
+    animation-iteration-count: infinite; /*elle se répéte à l'infinie*/
+    animation-timing-function: linear;/*La progression de l'animation pendant la durée de chaqe cycle */
+
+
+}
+
+.hideLoader {
+    display: none !important;
+}
+
+@keyframes loader {
+    
+    /* Début de l'animation */
+    /* 0% {
+        transform: rotate(0deg);
+    } */
+    /* Fin de l'animation */
+    /* 100% {
+        transform: rotate(360deg);
+    } */
+
+
+    /* Début de l'animation */
+    from{
+        transform: rotate(0deg);
+    }
+    /* Fin de l'animation */
+    to {
+        transform: rotate(360deg);
+    }
+
+
+
+}
 
 /************************************ HEADER ********************************* */
 header {
