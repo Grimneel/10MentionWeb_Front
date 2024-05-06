@@ -128,3 +128,23 @@ a {
 a:hover {
     color: var(--hover-btn);
 }
+
+.ceo {
+    background-image: url(../img/Perso_01.jpg);
+    background-size: cover;
+}
+
+.cpo {
+    background-image: url(../img/Perso_02.jpg);
+    background-size: cover;
+}
+
+.communication {
+    background-image: url(../img/Perso_03.jpg);
+    background-size: cover;
+}
+
+.educator {
+    background-image: url(../img/Perso_04.jpg);
+    background-size: cover;
+}

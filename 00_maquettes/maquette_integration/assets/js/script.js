@@ -35,19 +35,19 @@ form.addEventListener('submit', (event) => {
         let emailValue = email.value.trim();
         if (emailValue.includes("")) {
 
-            myAlert.innerHTML = '<p class="alert alert-danger text-center mt-3" role="alert">Veuillez renseigner tout les champs</p>';       
+            myAlert.innerHTML = '<p class="alert alert-danger text-center mt-3 d-flex flex-column justify-content-center " role="alert">Veuillez renseigner tout les champs</p>';       
             
             for (let input of inputs) {
                   setValidation(input, message);
                }
-    
+
         } else {
             myAlert.innerHTML = '';
 
             let regexEmail = /^(?=.*[a-zA-Z0-9]).{20,200}$/;
 
                     if (!regexEmail.test(emailValue)) {
-                    
+
                         message = 'Email n\est pas valide';
                         setValidation(email, message);
                     
@@ -55,5 +55,38 @@ form.addEventListener('submit', (event) => {
                         setValidation(email);
                     }
         }
+
+        let sujetValue = sujet.value.trim();
+        if (sujetValue.includes("")) {
+
+            myAlert.innerHTML = '<p class="alert alert-danger text-center mt-3" role="alert">Veuillez renseigner tout les champs</p>';       
+
+            for (let input of inputs) {
+                  setValidation(input, message);
+               }
+
+        } else {
+            myAlert.innerHTML = '';
+
+            let regexSujet = /^(?=.*[a-zA-Z0-9]).{20,200}$/;
+
+                    if (!regexSujet.test(sujetValue)) {
+                    
+                        message = 'Sujet n\est pas valide';
+                        setValidation(sujet, message);
+                    
+                    } else {
+                        setValidation(sujet);
+                    }
+        }
 })
+
+setValidation(element, infos);
+
+
+
+
+
+
+
 
